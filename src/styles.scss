@@ -1,0 +1,51 @@
+/* ng-conf-israel Website Stylesheet */
+$ngbackground: #333;
+$ngbackground-light: #666;
+$ngcolor: #d84437;
+$ngcolor-dark: #af362c;
+$ngcolor2: #e6e6e6;
+$ngcolor2-dark: #c0c0c0;
+$ngtext-light: white;
+$headerContainerPadding: 5px;
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	position: fixed;
+	background-color: $ngbackground;
+	color: $ngtext-light;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 60px;
+	z-index: 9999;
+	transform: translate3d(0, 0, 0);
+
+	h1, h2 {
+		float: left;
+		vertical-align: baseline;
+	}
+
+	h1 {
+		text-transform: uppercase;
+	}
+
+	.ng-cta-button{
+		float: right;
+		margin-top: 4px;
+		background-color: $ngcolor;
+		border-color: $ngcolor;
+		text-transform: uppercase;
+		color: white;
+		padding: 8px 14px;
+		font-weight: bold;
+
+		&:hover {
+			color: $ngcolor-dark;
+			border-color: $ngcolor-dark;
+			background-color: white;
+		}
+	}
+}
