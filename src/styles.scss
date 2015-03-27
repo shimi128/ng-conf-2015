@@ -6,10 +6,11 @@ $ngcolor-dark: #af362c;
 $ngcolor2: #e6e6e6;
 $ngcolor2-dark: #c0c0c0;
 $ngtext-light: white;
-$headerContainerPadding: 5px;
+$headerHeight: 60px;
 
 body {
 	font-family: 'Open Sans', sans-serif;
+	padding-top: $headerHeight;
 }
 
 header {
@@ -19,28 +20,45 @@ header {
 	top: 0;
 	left: 0;
 	right: 0;
-	height: 60px;
+	height: $headerHeight;
 	z-index: 9999;
 	transform: translate3d(0, 0, 0);
 
-	h1, h2 {
-		float: left;
-		vertical-align: baseline;
+	.header-content {
+		max-width: 1170px;
+		padding: 7px 0;
+		margin: 0 auto;
 	}
 
 	h1 {
+		font-size: 32px;
+		font-weight: 700;
+		display: inline-block;
+		text-transform: uppercase;
+		margin: 0;
 		text-transform: uppercase;
 	}
 
-	.ng-cta-button{
+	h2 {
+		color: white;
+		font-size: 17px;
+		font-weight: 300;
+		display: inline-block;
+		margin-left: 24px;
+	}
+
+	.ng-cta-button {
+		font-size: 18px;
+		line-height: 1.33;
 		float: right;
 		margin-top: 4px;
 		background-color: $ngcolor;
-		border-color: $ngcolor;
+		border: solid $ngcolor 1px;
 		text-transform: uppercase;
 		color: white;
 		padding: 8px 14px;
 		font-weight: bold;
+		text-decoration: none;
 
 		&:hover {
 			color: $ngcolor-dark;

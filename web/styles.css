@@ -1,6 +1,7 @@
 /* ng-conf-israel Website Stylesheet */
 body {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 60px; }
 
 header {
   position: fixed;
@@ -13,20 +14,35 @@ header {
   z-index: 9999;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0); }
-  header h1, header h2 {
-    float: left;
-    vertical-align: baseline; }
+  header .header-content {
+    max-width: 1170px;
+    padding: 7px 0;
+    margin: 0 auto; }
   header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0;
     text-transform: uppercase; }
+  header h2 {
+    color: white;
+    font-size: 17px;
+    font-weight: 300;
+    display: inline-block;
+    margin-left: 24px; }
   header .ng-cta-button {
+    font-size: 18px;
+    line-height: 1.33;
     float: right;
     margin-top: 4px;
     background-color: #d84437;
-    border-color: #d84437;
+    border: solid #d84437 1px;
     text-transform: uppercase;
     color: white;
     padding: 8px 14px;
-    font-weight: bold; }
+    font-weight: bold;
+    text-decoration: none; }
     header .ng-cta-button:hover {
       color: #af362c;
       border-color: #af362c;
