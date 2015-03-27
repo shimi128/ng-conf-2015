@@ -1,7 +1,8 @@
 /* ng-conf-israel Website Stylesheet */
 body {
   font-family: 'Open Sans', sans-serif;
-  padding-top: 60px; }
+  padding-top: 60px;
+  margin: 0; }
 
 header {
   position: fixed;
@@ -47,3 +48,18 @@ header {
       color: #af362c;
       border-color: #af362c;
       background-color: white; }
+
+section {
+  padding: 1em; }
+  section:after {
+    display: block;
+    content: " ";
+    clear: both; }
+
+section.section-dark {
+  background: #666;
+  color: #e6e6e6; }
+  section.section-dark h2 {
+    color: #c0c0c0; }
+  section.section-dark .side-image {
+    float: right; }
