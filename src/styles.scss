@@ -11,6 +11,7 @@ $headerHeight: 60px;
 body {
 	font-family: 'Open Sans', sans-serif;
 	padding-top: $headerHeight;
+	margin: 0;
 }
 
 header {
@@ -65,5 +66,28 @@ header {
 			border-color: $ngcolor-dark;
 			background-color: white;
 		}
+	}
+}
+
+section {
+	padding: 1em;
+
+	&:after {
+		display: block;
+		content: " ";
+		clear: both;
+	}
+}
+
+section.section-dark {
+	background: $ngbackground-light;
+	color: $ngcolor2;
+
+	h2 {
+		color: $ngcolor2-dark;
+	}
+
+	.side-image {
+		float: right;
 	}
 }
