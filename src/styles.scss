@@ -75,8 +75,13 @@ section .section-content {
 	max-width: $pageMaxWidth;
 	margin: 0 auto;
 
-	> h2 {
+	h2 {
 		margin-top: 0;
+		text-align: center;
+		text-transform: uppercase;
+		color: $ngcolor;
+		font-size: 30px;
+		font-weight: normal;
 	}
 
 	&:after {
@@ -91,10 +96,13 @@ section.section-dark {
 	color: $ngcolor2;
 
 	h2 {
-		color: $ngcolor2-dark;
+		color: $ngtext-light;
 	}
 
-	.side-image {
-		float: right;
+	.left-image {
+		float: left;
+		display: block;
+		margin-right: 1em;
+		border-radius: 6px;
 	}
 }
