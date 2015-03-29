@@ -14,6 +14,12 @@ body {
 	margin: 0;
 }
 
+h2 {
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.1;
+}
+
 header {
 	position: fixed;
 	background-color: rgba($ngbackground, 0.8);
@@ -72,9 +78,42 @@ header {
 section.hero-section {
 	background: $ngbackground;
 	text-align: center;
+	height: 611px;
+	overflow: hidden;
 
 	video {
+		width: 100%;
+		min-height: 100%;
 		opacity: 0.3;
+	}
+
+	.content {
+		position: absolute;
+		top: 140px;
+		left: 0;
+		right: 0;
+
+		h2 {
+			width: 100%;
+			color: $ngcolor2;
+			margin-bottom: 62px;
+			font-size: 82px;
+
+			> small {
+				display: block;
+				font-weight: bold;
+				text-align: right;
+				font-size: 22px;
+				margin: 0 auto;
+				width: 280px;
+				color: #999;
+			}
+		}
+
+		img {
+			margin-right: 32px;
+			vertical-align: middle;
+		}
 	}
 }
 
