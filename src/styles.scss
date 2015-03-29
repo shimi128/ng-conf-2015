@@ -11,13 +11,12 @@ $pageMaxWidth: 1170px;
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	padding-top: $headerHeight;
 	margin: 0;
 }
 
 header {
 	position: fixed;
-	background-color: $ngbackground;
+	background-color: rgba($ngbackground, 0.8);
 	color: $ngtext-light;
 	top: 0;
 	left: 0;
@@ -67,6 +66,15 @@ header {
 			border-color: $ngcolor-dark;
 			background-color: white;
 		}
+	}
+}
+
+section.hero-section {
+	background: $ngbackground;
+	text-align: center;
+
+	video {
+		opacity: 0.3;
 	}
 }
 
