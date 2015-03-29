@@ -59,7 +59,7 @@ section.hero-section {
   height: 611px;
   overflow: hidden; }
   section.hero-section video {
-    width: 100%;
+    max-width: 100%;
     min-height: 100%;
     opacity: 0.3; }
   section.hero-section .content {
