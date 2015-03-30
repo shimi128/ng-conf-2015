@@ -144,6 +144,11 @@ section.section-dark {
 	padding: 0;
 }
 
+.footer .footer-links a:hover{
+	color:  #d84437;
+}
+
+
 .footer .footer-links a{
 	display:inline-block;
 	line-height: 1.8;
