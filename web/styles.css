@@ -111,3 +111,24 @@ section.section-dark {
     display: block;
     margin-right: 1em;
     border-radius: 6px; }
+
+footer {
+	background:black;	
+	padding-left : 10%;
+	padding-right : 10%;
+}
+
+footer a {
+	color:red;
+	text-decoration: none;
+}
+
+footer a:not(:first-child) {
+    float :right;
+	padding-right : 1%;
+}
+/*
+footer a  {
+	color:red;
+}
+*/
