@@ -1,124 +1,124 @@
 /* ng-conf-israel Website Stylesheet */
 body {
-  font-family: 'Open Sans', sans-serif;
-  margin: 0; }
+	font-family: 'Open Sans', sans-serif;
+	margin: 0; }
 
 h2 {
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.1; }
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.1; }
 
 header {
-  position: fixed;
-  background-color: rgba(51, 51, 51, 0.8);
-  color: white;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
-  z-index: 9999;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0); }
-  header .header-content {
-    max-width: 1170px;
-    padding: 7px 0;
-    margin: 0 auto; }
-  header h1 {
-    font-size: 32px;
-    font-weight: 700;
-    display: inline-block;
-    text-transform: uppercase;
-    margin: 0;
-    text-transform: uppercase; }
-  header h2 {
-    color: white;
-    font-size: 17px;
-    font-weight: 300;
-    display: inline-block;
-    margin-left: 24px; }
-  header .ng-cta-button {
-    font-size: 18px;
-    line-height: 1.33;
-    float: right;
-    margin-top: 4px;
-    background-color: #d84437;
-    border: solid #d84437 1px;
-    text-transform: uppercase;
-    color: white;
-    padding: 8px 14px;
-    font-weight: bold;
-    text-decoration: none; }
-    header .ng-cta-button:hover {
-      color: #af362c;
-      border-color: #af362c;
-      background-color: white; }
+	position: fixed;
+	background-color: rgba(51, 51, 51, 0.8);
+	color: white;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 60px;
+	z-index: 9999;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0); }
+header .header-content {
+	max-width: 1170px;
+	padding: 7px 0;
+	margin: 0 auto; }
+header h1 {
+	font-size: 32px;
+	font-weight: 700;
+	display: inline-block;
+	text-transform: uppercase;
+	margin: 0;
+	text-transform: uppercase; }
+header h2 {
+	color: white;
+	font-size: 17px;
+	font-weight: 300;
+	display: inline-block;
+	margin-left: 24px; }
+header .ng-cta-button {
+	font-size: 18px;
+	line-height: 1.33;
+	float: right;
+	margin-top: 4px;
+	background-color: #d84437;
+	border: solid #d84437 1px;
+	text-transform: uppercase;
+	color: white;
+	padding: 8px 14px;
+	font-weight: bold;
+	text-decoration: none; }
+header .ng-cta-button:hover {
+	color: #af362c;
+	border-color: #af362c;
+	background-color: white; }
 
 section.hero-section {
-  background: #333;
-  text-align: center;
-  height: 611px;
-  overflow: hidden; }
-  section.hero-section video {
-    max-width: 100%;
-    min-height: 100%;
-    opacity: 0.3; }
-  section.hero-section .content {
-    position: absolute;
-    top: 140px;
-    left: 0;
-    right: 0; }
-    section.hero-section .content h2 {
-      width: 100%;
-      color: #e6e6e6;
-      margin-bottom: 62px;
-      font-size: 82px; }
-      section.hero-section .content h2 > small {
-        display: block;
-        font-weight: bold;
-        text-align: right;
-        font-size: 22px;
-        margin: 0 auto;
-        width: 280px;
-        color: #999; }
-    section.hero-section .content img {
-      margin-right: 32px;
-      vertical-align: middle; }
+	background: #333;
+	text-align: center;
+	height: 611px;
+	overflow: hidden; }
+section.hero-section video {
+	max-width: 100%;
+	min-height: 100%;
+	opacity: 0.3; }
+section.hero-section .content {
+	position: absolute;
+	top: 140px;
+	left: 0;
+	right: 0; }
+section.hero-section .content h2 {
+	width: 100%;
+	color: #e6e6e6;
+	margin-bottom: 62px;
+	font-size: 82px; }
+section.hero-section .content h2 > small {
+	display: block;
+	font-weight: bold;
+	text-align: right;
+	font-size: 22px;
+	margin: 0 auto;
+	width: 280px;
+	color: #999; }
+section.hero-section .content img {
+	margin-right: 32px;
+	vertical-align: middle; }
 
 section .section-content {
-  padding: 2.5em 1em;
-  max-width: 1170px;
-  min-height: 250px;
-  margin: 0 auto; }
-  section .section-content h2 {
-    margin-top: 0;
-    text-align: center;
-    text-transform: uppercase;
-    color: #d84437;
-    font-size: 30px;
-    font-weight: normal; }
-  section .section-content:after {
-    display: block;
-    content: " ";
-    clear: both; }
+	padding: 2.5em 1em;
+	max-width: 1170px;
+	min-height: 250px;
+	margin: 0 auto; }
+section .section-content h2 {
+	margin-top: 0;
+	text-align: center;
+	text-transform: uppercase;
+	color: #d84437;
+	font-size: 30px;
+	font-weight: normal; }
+section .section-content:after {
+	display: block;
+	content: " ";
+	clear: both; }
 
 section.section-dark {
-  background: #666;
-  color: #e6e6e6; }
-  section.section-dark h2 {
-    color: white; }
-  section.section-dark .left-image {
-    float: left;
-    display: block;
-    margin-right: 1em;
-    border-radius: 6px; }
+	background: #666;
+	color: #e6e6e6; }
+section.section-dark h2 {
+	color: white; }
+section.section-dark .left-image {
+	float: left;
+	display: block;
+	margin-right: 1em;
+	border-radius: 6px; }
 
 .stream-widget {
-  height: 100%;
-  width: 100%;
-  min-height: 800px;
-  border: none;
- }
-	
+	height: 100%;
+	width: 100%;
+	min-height: 800px;
+	border: none;
+}
+
 .footer{
 	background-color: #292c2f;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -250,7 +250,17 @@ section.section-dark {
 	margin-right: 3px;
 	margin-bottom: 5px;
 }
+ .fa-padding {
+	 padding-top: 9px;
+ }
 
+ .toolbar-background {
+	 background-color: rgba(51, 51, 51, 0.8) !important;
+ }
+
+ .menu-button-margins {
+	 margin-right: 64px;
+ }
 @media (max-width: 880px) {
 
 	.footer{
