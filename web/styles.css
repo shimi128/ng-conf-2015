@@ -84,6 +84,13 @@ section.hero-section {
       margin-right: 32px;
       vertical-align: middle; }
 
+.sponsor-logos {
+  background-color: #e6e6e6;
+  text-align: center; }
+  .sponsor-logos img, .sponsor-logos span {
+    vertical-align: middle;
+    margin-right: 64px; }
+
 section .section-content {
   padding: 2.5em 1em;
   max-width: 1170px;

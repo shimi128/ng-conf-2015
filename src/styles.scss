@@ -117,6 +117,16 @@ section.hero-section {
 	}
 }
 
+.sponsor-logos {
+	background-color: $ngcolor2;
+
+	text-align: center;
+	img, span {
+		vertical-align: middle;
+		margin-right: 64px;
+	}
+}
+
 section .section-content {
 	padding: 2.5em 1em;
 	max-width: $pageMaxWidth;
