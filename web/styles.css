@@ -17,25 +17,34 @@ header {
   right: 0;
   height: 60px;
   z-index: 9999;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0); }
+  transform: translate3d(0, 0, 0); }
   header .header-content {
     max-width: 1170px;
     padding: 7px 0;
     margin: 0 auto; }
   header h1 {
     font-size: 32px;
+    line-height: 32px;
     font-weight: 700;
     display: inline-block;
     text-transform: uppercase;
     margin: 0;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    padding-left: 12px; }
   header h2 {
     color: white;
     font-size: 17px;
     font-weight: 300;
     display: inline-block;
-    margin-left: 24px; }
+    text-align: center;
+    position: relative;
+    bottom: 1px;
+    left: 5px; }
+  header .logo-submit a {
+    float: right;
+    margin-right: 12px; }
+    header .logo-submit a span {
+      padding: 0 9px; }
   header .ng-cta-button {
     font-size: 18px;
     line-height: 1.33;
@@ -52,26 +61,32 @@ header {
       color: #af362c;
       border-color: #af362c;
       background-color: white; }
+  header .show-location-mobile {
+    position: absolute;
+    top: 7px;
+    font-size: 11px;
+    left: 12px;
+    color: #c2c2c2; }
 
 section.hero-section {
-  background: #333;
+  background: #333333;
   text-align: center;
-  height: 611px;
   overflow: hidden; }
   section.hero-section video {
     max-width: 100%;
-    min-height: 100%;
+    max-height: 100%;
+    margin-top: 60px;
     opacity: 0.3; }
   section.hero-section .content {
     position: absolute;
-    top: 140px;
+    top: 0px;
     left: 0;
     right: 0; }
     section.hero-section .content h2 {
       width: 100%;
       color: #e6e6e6;
-      margin-bottom: 62px;
-      font-size: 82px; }
+      font-size: 82px;
+      margin-top: 200px; }
       section.hero-section .content h2 > small {
         display: block;
         font-weight: bold;
@@ -80,9 +95,10 @@ section.hero-section {
         margin: 0 auto;
         width: 280px;
         color: #999; }
-    section.hero-section .content img {
+    section.hero-section .content img.angular-logo {
       margin-right: 32px;
-      vertical-align: middle; }
+      vertical-align: middle;
+      width: 138px; }
 
 .sponsor-logos {
   background-color: #e6e6e6;
@@ -109,7 +125,7 @@ section .section-content {
     clear: both; }
 
 section.section-dark {
-  background: #666;
+  background: #666666;
   color: #e6e6e6; }
   section.section-dark h2 {
     color: white; }
@@ -117,7 +133,8 @@ section.section-dark {
     float: left;
     display: block;
     margin-right: 1em;
-    border-radius: 6px; }
+    border-radius: 6px;
+    width: 50%; }
 
 .stream-widget {
   height: 100%;
@@ -138,7 +155,9 @@ section.section-dark {
   font: bold 16px sans-serif;
   padding: 55px 50px;
   margin-top: 80px; }
-  .footer .footer-left, .footer .footer-center, .footer .footer-right {
+  .footer .footer-left,
+  .footer .footer-center,
+  .footer .footer-right {
     display: inline-block;
     vertical-align: top; }
   .footer .footer-left {
@@ -219,17 +238,32 @@ section.section-dark {
       line-height: 35px;
       margin-right: 3px;
       margin-bottom: 5px; }
-  @media (max-width: 880px) {
-    .footer {
-      font: bold 14px sans-serif; }
-      .footer .footer-left, .footer .footer-center, .footer .footer-right {
-        display: block;
-        width: 100%;
-        margin-bottom: 40px;
-        text-align: center; }
-      .footer .footer-center i {
-        margin-left: 0; } }
 
+@media (max-width: 880px) {
+  header .logo-submit a {
+    font-size: 18px; }
+  header h1 {
+    font-size: 30px; }
+
+  section.hero-section .content h2 {
+    font-size: 82px;
+    margin-top: 90px;
+    margin-bottom: 43px; }
+    section.hero-section .content h2 > small {
+      font-size: 22px;
+      width: 280px; }
+
+  font: bold 14px sans-serif;
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center; }
+
+  .footer-center i {
+    margin-left: 0; } }
 .fa-padding {
   padding-top: 9px; }
 
@@ -238,3 +272,235 @@ section.section-dark {
 
 .menu-button-margins {
   margin-right: 64px; }
+
+@media (max-width: 1000px) {
+  header .logo-submit a {
+    font-size: 18px; }
+  header h1 {
+    font-size: 30px;
+    white-space: nowrap; }
+  header h2.logo-where {
+    font-size: 17px; }
+
+  section.hero-section .content h2 {
+    font-size: 83px;
+    margin-top: 192px;
+    margin-bottom: 43px; }
+    section.hero-section .content h2 > small {
+      font-size: 22px;
+      width: 280px; }
+  section.hero-section img.angular-logo {
+    height: 145px;
+    width: 133px; }
+
+  .sponsor-logos {
+    padding-left: 10px; }
+    .sponsor-logos img, .sponsor-logos .sponsor-logos span {
+      margin-right: 64px; }
+    .sponsor-logos .logo-wix {
+      width: 174px;
+      height: 23px; }
+    .sponsor-logos .logo-gdg {
+      width: 174px;
+      height: 82px; }
+    .sponsor-logos .logo-500tech {
+      width: 174px;
+      margin-right: 0px; } }
+@media (max-width: 900px) {
+  header .logo-submit a {
+    font-size: 16.2px; }
+  header h1 {
+    font-size: 27px;
+    white-space: nowrap; }
+  header h2.logo-where {
+    font-size: 15.3px; }
+
+  section.hero-section .content h2 {
+    font-size: 74.7px;
+    margin-top: 172.8px;
+    margin-bottom: 38.7px; }
+    section.hero-section .content h2 > small {
+      font-size: 19.8px;
+      width: 252px; }
+  section.hero-section img.angular-logo {
+    height: 130.5px;
+    width: 119.7px; }
+
+  .sponsor-logos {
+    padding-left: 9px; }
+    .sponsor-logos img, .sponsor-logos .sponsor-logos span {
+      margin-right: 57.6px; }
+    .sponsor-logos .logo-wix {
+      width: 156.6px;
+      height: 20.7px; }
+    .sponsor-logos .logo-gdg {
+      width: 156.6px;
+      height: 73.8px; }
+    .sponsor-logos .logo-500tech {
+      width: 156.6px;
+      margin-right: 0px; } }
+@media (max-width: 800px) {
+  header .logo-submit a {
+    font-size: 14.4px; }
+  header h1 {
+    font-size: 24px;
+    white-space: nowrap; }
+  header h2.logo-where {
+    font-size: 13.6px; }
+
+  section.hero-section .content h2 {
+    font-size: 66.4px;
+    margin-top: 153.6px;
+    margin-bottom: 34.4px; }
+    section.hero-section .content h2 > small {
+      font-size: 17.6px;
+      width: 224px; }
+  section.hero-section img.angular-logo {
+    height: 116px;
+    width: 106.4px; }
+
+  .sponsor-logos {
+    padding-left: 8px; }
+    .sponsor-logos img, .sponsor-logos .sponsor-logos span {
+      margin-right: 51.2px; }
+    .sponsor-logos .logo-wix {
+      width: 139.2px;
+      height: 18.4px; }
+    .sponsor-logos .logo-gdg {
+      width: 139.2px;
+      height: 65.6px; }
+    .sponsor-logos .logo-500tech {
+      width: 139.2px;
+      margin-right: 0px; } }
+@media (max-width: 700px) {
+  header .logo-submit a {
+    font-size: 12.6px; }
+  header h1 {
+    font-size: 21px;
+    white-space: nowrap; }
+  header h2.logo-where {
+    font-size: 11.9px; }
+
+  section.hero-section .content h2 {
+    font-size: 58.1px;
+    margin-top: 134.4px;
+    margin-bottom: 30.1px; }
+    section.hero-section .content h2 > small {
+      font-size: 15.4px;
+      width: 196px; }
+  section.hero-section img.angular-logo {
+    height: 101.5px;
+    width: 93.1px; }
+
+  .sponsor-logos {
+    padding-left: 7px; }
+    .sponsor-logos img, .sponsor-logos .sponsor-logos span {
+      margin-right: 44.8px; }
+    .sponsor-logos .logo-wix {
+      width: 121.8px;
+      height: 16.1px; }
+    .sponsor-logos .logo-gdg {
+      width: 121.8px;
+      height: 57.4px; }
+    .sponsor-logos .logo-500tech {
+      width: 121.8px;
+      margin-right: 0px; } }
+@media (max-width: 600px) {
+  header .logo-submit a {
+    font-size: 10.8px; }
+  header h1 {
+    font-size: 18px;
+    white-space: nowrap; }
+  header h2.logo-where {
+    font-size: 10.2px; }
+
+  section.hero-section .content h2 {
+    font-size: 49.8px;
+    margin-top: 115.2px;
+    margin-bottom: 25.8px; }
+    section.hero-section .content h2 > small {
+      font-size: 13.2px;
+      width: 168px; }
+  section.hero-section img.angular-logo {
+    height: 87px;
+    width: 79.8px; }
+
+  .sponsor-logos {
+    padding-left: 6px; }
+    .sponsor-logos img, .sponsor-logos .sponsor-logos span {
+      margin-right: 38.4px; }
+    .sponsor-logos .logo-wix {
+      width: 104.4px;
+      height: 13.8px; }
+    .sponsor-logos .logo-gdg {
+      width: 104.4px;
+      height: 49.2px; }
+    .sponsor-logos .logo-500tech {
+      width: 104.4px;
+      margin-right: 0px; } }
+@media (max-width: 500px) {
+  header .logo-submit a {
+    font-size: 9px; }
+  header h1 {
+    font-size: 15px;
+    white-space: nowrap; }
+  header h2.logo-where {
+    font-size: 8.5px; }
+
+  section.hero-section .content h2 {
+    font-size: 41.5px;
+    margin-top: 96px;
+    margin-bottom: 21.5px; }
+    section.hero-section .content h2 > small {
+      font-size: 11px;
+      width: 140px; }
+  section.hero-section img.angular-logo {
+    height: 72.5px;
+    width: 66.5px; }
+
+  .sponsor-logos {
+    padding-left: 5px; }
+    .sponsor-logos img, .sponsor-logos .sponsor-logos span {
+      margin-right: 32px; }
+    .sponsor-logos .logo-wix {
+      width: 87px;
+      height: 11.5px; }
+    .sponsor-logos .logo-gdg {
+      width: 87px;
+      height: 41px; }
+    .sponsor-logos .logo-500tech {
+      width: 87px;
+      margin-right: 0px; } }
+@media (max-width: 400px) {
+  header .logo-submit a {
+    font-size: 7.2px; }
+  header h1 {
+    font-size: 12px;
+    white-space: nowrap; }
+  header h2.logo-where {
+    font-size: 6.8px; }
+
+  section.hero-section .content h2 {
+    font-size: 33.2px;
+    margin-top: 76.8px;
+    margin-bottom: 17.2px; }
+    section.hero-section .content h2 > small {
+      font-size: 8.8px;
+      width: 112px; }
+  section.hero-section img.angular-logo {
+    height: 58px;
+    width: 53.2px; }
+
+  .sponsor-logos {
+    padding-left: 4px; }
+    .sponsor-logos img, .sponsor-logos .sponsor-logos span {
+      margin-right: 25.6px; }
+    .sponsor-logos .logo-wix {
+      width: 69.6px;
+      height: 9.2px; }
+    .sponsor-logos .logo-gdg {
+      width: 69.6px;
+      height: 32.8px; }
+    .sponsor-logos .logo-500tech {
+      width: 69.6px;
+      margin-right: 0px; } }
