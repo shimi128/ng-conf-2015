@@ -39,11 +39,13 @@ header {
 
 	h1 {
 		font-size: 32px;
+		line-height: 32px;
 		font-weight: 700;
 		display: inline-block;
 		text-transform: uppercase;
 		margin: 0;
 		text-transform: uppercase;
+		padding-left: 12px;
 	}
 
 	h2 {
@@ -51,7 +53,18 @@ header {
 		font-size: 17px;
 		font-weight: 300;
 		display: inline-block;
-		margin-left: 24px;
+		text-align: center;
+		position: relative;
+		bottom: 1px;
+		left: 5px;
+	}
+
+	.logo-submit a {
+		float: right;
+		margin-right: 12px;
+		span {
+			padding: 0 9px;
+		}
 	}
 
 	.ng-cta-button {
@@ -73,32 +86,38 @@ header {
 			background-color: white;
 		}
 	}
+	.show-location-mobile {
+		position: absolute;
+		top: 7px;
+		font-size: 11px;
+		left: 12px;
+		color: rgb(194, 194, 194);
+	}
 }
 
 section.hero-section {
 	background: $ngbackground;
 	text-align: center;
-	height: 611px;
 	overflow: hidden;
 
 	video {
 		max-width: 100%;
-		min-height: 100%;
+		max-height: 100%;
+		margin-top: $headerHeight;
 		opacity: 0.3;
 	}
 
 	.content {
 		position: absolute;
-		top: 140px;
+		top: 0px;
 		left: 0;
 		right: 0;
 
 		h2 {
 			width: 100%;
 			color: $ngcolor2;
-			margin-bottom: 62px;
 			font-size: 82px;
-
+			margin-top: 200px;
 			> small {
 				display: block;
 				font-weight: bold;
@@ -110,9 +129,11 @@ section.hero-section {
 			}
 		}
 
-		img {
+		img.angular-logo {
 			margin-right: 32px;
 			vertical-align: middle;
+			width: 138px;
+
 		}
 	}
 }
@@ -162,6 +183,7 @@ section.section-dark {
 		display: block;
 		margin-right: 1em;
 		border-radius: 6px;
+		width: 50%;
 	}
 }
 
@@ -309,24 +331,47 @@ section.section-dark {
 		}
 	}
 
-	@media (max-width: 880px) {
+}
 
-		font: bold 14px sans-serif;
-
-		.footer-left,
-		.footer-center,
-		.footer-right {
-			display: block;
-			width: 100%;
-			margin-bottom: 40px;
-			text-align: center;
+@media (max-width: 880px) {
+	header {
+		.logo-submit a {
+			font-size: 18px;
 		}
-
-		.footer-center i {
-			margin-left: 0;
+		h1 {
+			font-size: 30px;
 		}
-
 	}
+	section.hero-section {
+		.content {
+
+			h2 {
+				font-size: 82px;
+				margin-top: 90px;
+				margin-bottom: 43px;
+				> small {
+					font-size: 22px;
+					width: 280px;
+				}
+			}
+
+		}
+	}
+	font: bold 14px sans-serif;
+
+	.footer-left,
+	.footer-center,
+	.footer-right {
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-center i {
+		margin-left: 0;
+	}
+
 }
 
 .fa-padding {
@@ -339,4 +384,55 @@ section.section-dark {
 
 .menu-button-margins {
 	margin-right: 64px;
+}
+
+@for $i from 0 through 12 {
+	$media: 1000*(10-$i/2)/10+'px';
+	$ratio: (10-$i/2)/10;
+	@media (max-width: $media) {
+
+		header {
+			.logo-submit a {
+				font-size: 18*$ratio+px;
+			}
+			h1 {
+				font-size: 30*$ratio+px;
+				white-space: nowrap;
+			}
+			h2.logo-where {
+				font-size: 17*$ratio+px;
+			}
+		}
+		section.hero-section {
+			.content {
+
+				h2 {
+					font-size: 83*$ratio+px;
+					margin-top: 192*$ratio+px;
+					margin-bottom: 43*$ratio+px;
+					> small {
+						font-size: 22*$ratio+px;
+						width: 280*$ratio+px;
+					}
+				}
+
+			}
+			img.angular-logo {
+				height: 145*$ratio+px;
+				width: 133*$ratio+px;
+			}
+		}
+		.sponsor-logos {
+			padding-left: 10*$ratio+px;
+			  img, .sponsor-logos span {
+				margin-right: 64*$ratio+ px;
+			  } 
+		}
+		.partner-logos img {
+			margin-right: 64*$ratio+px;
+			padding-bottom: 10px;
+			max-width: 290px;
+		}
+	}
+
 }
