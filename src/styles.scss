@@ -386,9 +386,9 @@ section.section-dark {
 	margin-right: 64px;
 }
 
-@for $i from 0 through 6 {
-	$media: 1000*(10-$i)/10+'px';
-	$ratio: (10-$i)/10;
+@for $i from 0 through 12 {
+	$media: 1000*(10-$i/2)/10+'px';
+	$ratio: (10-$i/2)/10;
 	@media (max-width: $media) {
 
 		header {
@@ -426,20 +426,12 @@ section.section-dark {
 			padding-left: 10*$ratio+px;
 			  img, .sponsor-logos span {
 				margin-right: 64*$ratio+ px;
-			  }
-			.logo-wix {
-				width:174*$ratio+px;
-				height: 23*$ratio+px;
-
-			}
-			.logo-gdg {
-				width:174*$ratio+px;
-				height: 82*$ratio+px;
-			}
-			.logo-500tech{
-				width:174*$ratio+px;
-				margin-right: 0px;
-			}
+			  } 
+		}
+		.partner-logos img {
+			margin-right: 64*$ratio+px;
+			padding-bottom: 10px;
+			max-width: 290px;
 		}
 	}
 
