@@ -145,6 +145,8 @@ section.hero-section {
 	img, span {
 		vertical-align: middle;
 		margin-right: 64px;
+		max-width: 194px;
+		width: 194px;
 	}
 }
 
@@ -386,10 +388,12 @@ section.section-dark {
 	margin-right: 64px;
 }
 
-@for $i from 0 through 12 {
-	$media: 1000*(10-$i/2)/10+'px';
+//for fonts
+@for $i from 0 through 10 {
+	$media: 1000*(10-$i/2)/10+ px ;
+	$min-media: 1000*(10-($i+1)/2)/10+ px ;
 	$ratio: (10-$i/2)/10;
-	@media (max-width: $media) {
+	@media (max-width: $media)   {
 
 		header {
 			.logo-submit a {
@@ -403,9 +407,37 @@ section.section-dark {
 				font-size: 17*$ratio+px;
 			}
 		}
+
+	}
+
+}
+//for media
+@for $i from 0 through 12 {
+	$media: 1000*(10-$i/2)/10+ px ;
+	$min-media: 1000*(10-($i+1)/2)/10+ px ;
+	$ratio: (10-$i/2)/10;
+	@media (max-width: $media)   {
+		section.hero-section {
+			img.angular-logo {
+				height: 145*$ratio+px;
+				width: 133*$ratio+px;
+			}
+		}
+		.sponsor-logos {
+			padding-left: 10*$ratio+px;
+			img, .sponsor-logos span {
+				margin-right: 6*$ratio+ px;
+				max-width: 194*$ratio+ px;
+				width: 194*$ratio+ px;
+			}
+		}
+		.partner-logos img {
+			margin-right: 64*$ratio+px;
+			padding-bottom: 10px;
+			max-width: 290px;
+		}
 		section.hero-section {
 			.content {
-
 				h2 {
 					font-size: 83*$ratio+px;
 					margin-top: 192*$ratio+px;
@@ -417,21 +449,6 @@ section.section-dark {
 				}
 
 			}
-			img.angular-logo {
-				height: 145*$ratio+px;
-				width: 133*$ratio+px;
-			}
-		}
-		.sponsor-logos {
-			padding-left: 10*$ratio+px;
-			  img, .sponsor-logos span {
-				margin-right: 64*$ratio+ px;
-			  } 
-		}
-		.partner-logos img {
-			margin-right: 64*$ratio+px;
-			padding-bottom: 10px;
-			max-width: 290px;
 		}
 	}
 
