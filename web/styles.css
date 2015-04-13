@@ -109,6 +109,9 @@ section.hero-section {
     margin-right: 64px;
     max-width: 194px;
     width: 194px; }
+  .sponsor-logos .logo-wix {
+    width: 280px;
+    max-width: 280px; }
 
 section .section-content {
   padding: 2.5em 1em;
