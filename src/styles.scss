@@ -393,6 +393,29 @@ section.section-dark {
 	margin-right: 64px;
 }
 
+#team {
+	a {
+		backface-visibility: hidden;
+		margin: 8px;
+		padding: 8px;
+		background-color: white;
+		border-radius: 2px;
+		text-align: center;
+		text-decoration: none;
+		font-size: 16px;
+		transition: transform ease 0.3s;
+
+		> img {
+			width: 80px;
+			margin: 0 auto 4px;
+		}
+
+		&:hover {
+			transform: scale(1.15);
+		}
+	}
+}
+
 //for fonts
 @for $i from 0 through 10 {
 	$media: 1000*(10-$i/2)/10+ px ;
