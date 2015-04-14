@@ -273,6 +273,26 @@ section.section-dark {
 .menu-button-margins {
   margin-right: 64px; }
 
+#team a {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  margin: 8px;
+  padding: 8px;
+  background-color: white;
+  border-radius: 2px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  -webkit-transition: -webkit-transform ease 0.3s;
+          transition: transform ease 0.3s; }
+  #team a > img {
+    width: 80px;
+    margin: 0 auto 4px; }
+  #team a:hover {
+    -webkit-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+            transform: scale(1.15); }
+
 @media (max-width: 1000px) {
   header .logo-submit a {
     font-size: 18px; }
