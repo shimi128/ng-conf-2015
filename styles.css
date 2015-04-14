@@ -114,12 +114,12 @@ section.hero-section {
     max-width: 280px; }
 
 section .section-content {
-  padding: 2.5em 1em;
+  padding: 60px 1em 2.5em;
   max-width: 1170px;
   min-height: 250px;
   margin: 0 auto; }
   section .section-content h2 {
-    margin-top: 0;
+    margin: 8px 0 30px;
     text-align: center;
     text-transform: uppercase;
     color: #d84437;
