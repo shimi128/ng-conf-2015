@@ -156,13 +156,13 @@ section.hero-section {
 }
 
 section .section-content {
-	padding: 2.5em 1em;
+	padding: $headerHeight 1em 2.5em;
 	max-width: $pageMaxWidth;
 	min-height: 250px;
 	margin: 0 auto;
 
 	h2 {
-		margin-top: 0;
+		margin: 8px 0 ($headerHeight / 2);
 		text-align: center;
 		text-transform: uppercase;
 		color: $ngcolor;
