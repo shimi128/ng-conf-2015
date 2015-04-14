@@ -405,10 +405,10 @@ section.section-dark {
 		text-decoration: none;
 		font-size: 16px;
 		transition: transform ease 0.3s;
-    color: #333;
-    font-weight: bold;
-    font-size: 12px;
-    text-align: center;
+		color: #333;
+		font-weight: bold;
+		font-size: 12px;
+		text-align: center;
 
 		> img {
 			width: 80px;
@@ -417,17 +417,17 @@ section.section-dark {
 
 		&:hover {
 			transform: scale(1.15);
-      color: black;
+			color: black;
 		}
 	}
 }
 
 //for fonts
 @for $i from 0 through 10 {
-	$media: 1000*(10-$i/2)/10+ px ;
-	$min-media: 1000*(10-($i+1)/2)/10+ px ;
+	$media: 1000*(10-$i/2)/10+ px;
+	$min-media: 1000*(10-($i+1)/2)/10+ px;
 	$ratio: (10-$i/2)/10;
-	@media (max-width: $media)   {
+	@media (max-width: $media) {
 
 		header {
 			.logo-submit a {
@@ -445,12 +445,13 @@ section.section-dark {
 	}
 
 }
+
 //for media
 @for $i from 0 through 12 {
-	$media: 1000*(10-$i/2)/10+ px ;
-	$min-media: 1000*(10-($i+1)/2)/10+ px ;
+	$media: 1000*(10-$i/2)/10+ px;
+	$min-media: 1000*(10-($i+1)/2)/10+ px;
 	$ratio: (10-$i/2)/10;
-	@media (max-width: $media)   {
+	@media (max-width: $media) {
 		section.hero-section {
 			img.angular-logo {
 				height: 145*$ratio+px;

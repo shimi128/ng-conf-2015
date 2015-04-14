@@ -285,14 +285,19 @@ section.section-dark {
   text-decoration: none;
   font-size: 16px;
   -webkit-transition: -webkit-transform ease 0.3s;
-          transition: transform ease 0.3s; }
+          transition: transform ease 0.3s;
+  color: #333;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center; }
   #team a > img {
     width: 80px;
     margin: 0 auto 4px; }
   #team a:hover {
     -webkit-transform: scale(1.15);
         -ms-transform: scale(1.15);
-            transform: scale(1.15); }
+            transform: scale(1.15);
+    color: black; }
 
 @media (max-width: 1000px) {
   header .logo-submit a {
