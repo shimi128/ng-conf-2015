@@ -292,6 +292,7 @@ section.section-dark {
   text-align: center; }
   #team a > img {
     width: 80px;
+    height: 80px;
     margin: 0 auto 4px; }
   #team a:hover {
     -webkit-transform: scale(1.15);
