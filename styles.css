@@ -103,6 +103,7 @@ section.hero-section {
 
 .sponsor-logos {
   background-color: #e6e6e6;
+  padding: 0.4em 0;
   text-align: center; }
   .sponsor-logos img, .sponsor-logos span {
     vertical-align: middle;
