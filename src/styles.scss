@@ -189,10 +189,27 @@ section.section-dark {
 	.left-image {
 		float: left;
 		display: block;
-		margin-right: 1em;
 		border-radius: 6px;
 		width: 50%;
+    border: 3px solid #444;
 	}
+
+  .google-map {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    margin-right: 10px;
+    background: url("/images/googlemaps.png") no-repeat center;
+  }
+
+  .details {
+    float: right;
+    display: block;
+    width: 50%;
+    padding-left: 1em;
+  }
 }
 
 .stream-widget {
