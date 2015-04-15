@@ -290,6 +290,7 @@ section.section-dark {
   margin-right: 64px; }
 
 #team a {
+  display: inline-block;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   margin: 8px;
@@ -306,6 +307,7 @@ section.section-dark {
   font-size: 12px;
   text-align: center; }
   #team a > img {
+    display: block;
     width: 100px;
     height: 100px;
     margin: 0 auto 4px; }
