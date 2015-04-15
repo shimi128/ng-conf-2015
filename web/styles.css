@@ -306,8 +306,8 @@ section.section-dark {
   font-size: 12px;
   text-align: center; }
   #team a > img {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     margin: 0 auto 4px; }
   #team a:hover {
     -webkit-transform: scale(1.15);
