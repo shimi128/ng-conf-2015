@@ -416,6 +416,7 @@ section.section-dark {
 
 #team {
 	a {
+		display: inline-block;
 		backface-visibility: hidden;
 		margin: 8px;
 		padding: 8px;
@@ -431,6 +432,7 @@ section.section-dark {
 		text-align: center;
 
 		> img {
+			display: block;
 			width: 100px;
 			height: 100px;
 			margin: 0 auto 4px;
