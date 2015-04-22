@@ -311,6 +311,9 @@ section.section-dark {
     width: 100px;
     height: 100px;
     margin: 0 auto 4px; }
+  #team a .team-twitter {
+    font-size: 10px;
+    font-weight: normal; }
   #team a:hover {
     -webkit-transform: scale(1.15);
         -ms-transform: scale(1.15);
