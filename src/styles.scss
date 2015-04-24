@@ -394,21 +394,23 @@ section.section-dark {
 
         }
     }
-    font: bold 14px sans-serif;
 
-    .footer-left,
-    .footer-center,
-    .footer-right {
-        display: block;
-        width: 100%;
-        margin-bottom: 40px;
-        text-align: center;
+    .footer {
+        font: bold 14px sans-serif;
+
+        .footer-left,
+        .footer-center,
+        .footer-right {
+            display: block;
+            width: 100%;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .footer-center i {
+            margin-left: 0;
+        }
     }
-
-    .footer-center i {
-        margin-left: 0;
-    }
-
 }
 
 .fa-padding {
